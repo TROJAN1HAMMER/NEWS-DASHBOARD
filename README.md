@@ -17,6 +17,7 @@ Open your web browser and go to http://localhost:8080 (or the provided server UR
 Use the "Select Country" and "Select Category" dropdown menus to set your news preferences.
 The application will fetch and display news articles based on your selections.
 Each article is presented in a responsive grid layout for optimal viewing.
+
 5. Stop the Local Server:
 To stop the local server and close the application:
 
