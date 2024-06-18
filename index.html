@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Dashboard</title>
+    <!-- Link to Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Link to your custom styles.css -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="border rounded-lg bg-blue-600 text-white py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold">News Dashboard</h1>
+            <div class="flex space-x-4 items-center">
+                <!-- Select Country -->
+                <div class="relative">
+                    <label for="country-select" class="sr-only">Select Country</label>
+                    <select id="country-select"
+                        class="block appearance-none bg-gray-200 border border-gray-300 px-4 py-2 rounded-md shadow-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 transition duration-150 text-gray-800 text-center">
+                        <option value="us">United States</option>
+                        <option value="gb">United Kingdom</option>
+                        <option value="ca">Canada</option>
+                        <option value="au">Australia</option>
+                        <option value="in">India</option>
+                    </select>
+                </div>
+                <!-- Select Category -->
+                <div class="relative">
+                    <label for="category-select" class="sr-only">Select Category</label>
+                    <select id="category-select"
+                        class="block appearance-none bg-gray-200 border border-gray-300 px-4 py-2 rounded-md shadow-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 transition duration-150 text-gray-800 text-center">
+                        <option value="general">General</option>
+                        <option value="business">Business</option>
+                        <option value="entertainment">Entertainment</option>
+                        <option value="health">Health</option>
+                        <option value="science">Science</option>
+                        <option value="sports">Sports</option>
+                        <option value="technology">Technology</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- News Container -->
+        <div id="news-container"
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border rounded-lg bg-blue-600 text-white py-4 text-center">
+        <div class="container mx-auto px-4">
+            <p>TROJAN1HAMMER &copy; 2024 News Dashboard</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
